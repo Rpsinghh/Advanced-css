@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+</head>
+<body>
+    <style>
+        .div
+        {
+            display:flex;
+            background-color: yellow;height:400px;
+            text-align:center;
+            justify-content:space-evenly;
+            /* Border:border-width border-styleborder-color */
+            align-items: center;
+            border-width:3px;
+            border-style: solid;
+            border-color: red;
+
+            /* Everything in one line */
+            
+        }
+        .div1
+        {
+            height:200px;
+            width:20%;
+            border: 1px solid black;
+            border:3px ridge black;
+            border:3px none black;
+            border:3px hidden black;
+            border:3px double black;
+            border:3px dotted black;
+            border:3px dashed black;
+            border:3px groove lightgray;
+            border:3px inset lightgray;
+            border:3px outset lightgray;
+            
+
+        }
+    </style>
+    <h1>Borders in css</h1>
+    <div class="div">
+        <div class="div1">
+            <h3>Item 1</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 200</label>
+        </div>
+        <div class="div1"> <h3>Item 2</h3>
+            <p>This item is very unique item in the list of these three</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 500</label>
+</div>
+<div class="div1"> <h3>Item 3</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 9000</label>
+</div>
+    </div>
+    
+</body>
+</html>
