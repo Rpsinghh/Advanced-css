@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+</head>
+<body>
+    <style>
+        .div
+        {
+            display:flex;
+            background-color: yellow;height:400px;
+            text-align:center;
+            justify-content:space-evenly;
+            align-items: center;
+            
+        }
+        .div1
+        {
+            height:300px;
+            width:20%;
+            border:3px ridge black;
+            /* Border radius is use for rounded the border */
+            border-radius:12px;
+            border-radius:50%;
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            border-radius:50%/10%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 23px;
+            
+        }
+    </style>
+    <h1>Borders in css</h1>
+    <div class="div">
+        <div class="div1">
+            <h3>Item 1</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 200</label>
+        </div>
+        <div class="div1"> <h3>Item 2</h3>
+            <p>This item is very unique item in the list of these three</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 500</label>
+</div>
+
+    </div>
+    
+</body>
+</html>
