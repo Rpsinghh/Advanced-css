@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+</head>
+<body>
+    <style>
+        .div{
+            display:flex;
+            /* background-color: yellow; */
+            height:400px;
+            text-align:center;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .div1{
+            border:2px solid gray;
+            text-align:center;
+            width:20%;
+            height:250px;
+            box-shadow: 2px 4px;
+            box-shadow: -2px -4px;
+            box-shadow: 2px 4px 5px 4px gray;
+            box-shadow: -3px -3px 2px lightgray inset,2px 2px 2px lightgray inset;
+        
+        }
+        .text-shadow{
+            /* so here we use all the properties of text shadow */
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 1px;
+            /* Text shadow
+            none
+            h-shadow
+            v-shadow
+            blur-radius
+             */
+             text-shadow:2px 2px red;/*right down red*/
+             text-shadow:-2px -4px green;
+             text-shadow:2px 4px 5px red;
+             text-shadow: 2px 2px 5px red,8px 8px 5px yellow,10px 10px 6px green;
+        }
+    </style>
+    <h1 class="text-shadow">Borders in css</h1>
+    <div class="div">
+        <div class="div1">
+            <h3>Item 1</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 200</label>
+        </div>
+        <div class="div1"> <h3>Item 2</h3>
+            <p>This item is very unique item in the list of these three</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 500</label>
+</div>
+<div class="div1"> <h3>Item 3</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 9000</label>
+</div>
+    </div>
+    
+</body>
+</html>
