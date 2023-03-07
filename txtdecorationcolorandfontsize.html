@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text decoration adn color and font size</title>
+</head>
+<body>
+    <style>
+        .div{
+            display:flex;
+            /* background-color: yellow; */
+            height:400px;
+            text-align:center;
+            justify-content:space-evenly;
+            align-items: center;
+            
+        }
+        .div1{
+            border:2px solid gray;
+            text-align:center;
+            width:20%;
+            height:250px;
+            
+            box-shadow: -3px -3px 2px lightgray inset,2px 2px 2px lightgray inset;
+            font-style: inherit;
+        
+        }
+        .decoration{
+            text-align: center;
+            font-size: 40px;
+            /* Text decoration line,style and color */
+            /* Text decoration like underline,overline,line through
+            2.Text-decoration-style like solid,dotted,dashed,wavy,double */
+            /* so we can apply text decorations separatly and in a whole format also  */
+            text-decoration-line: underline overline line-through;
+            text-decoration-style: dotted;
+            text-decoration-style: wavy;
+            
+            text-decoration-color: blue;
+            
+            /* In single format it is 
+            text-decoration:line style color */
+            text-decoration: underline wavy aqua;
+            /* for none we can use none text decoration */
+            text-decoration: none;
+
+
+
+        }
+        .text-shadow{
+            
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px red,8px 8px 5px yellow,10px 10px 6px green;
+            /* Font size is the size of the text written in the html and css */
+            font: size 50px;
+            font-size: 5vmax;
+            /* letter spacing is the space in between the letters  */
+            letter-spacing:2px;
+        }
+        .family{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <h1 class="text-shadow">Borders in css</h1>
+    <h2 class="decoration">Text decoration adn colors</h2>
+    <div class="div">
+        <div class="div1">
+            <h3>Item 1</h3>
+            <p class="family">This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 200</label>
+        </div>
+        <div class="div1"> <h3>Item 2</h3>
+            <p>This item is very unique item in the list of these three</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 500</label>
+</div>
+<div class="div1"> <h3>Item 3</h3>
+            <p>This item is very unique item</p>
+            <input type="checkbox"map="yes">
+            <label for="yes">Rs 9000</label>
+</div>
+    </div>
+</body>
+</html>
